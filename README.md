@@ -1,15 +1,10 @@
 # NYCU-Computer-Vision-2025-Spring-HW1
 
 StudentID: 110263029
+
 Name: 楊芊華
 
 # Introduction
-Something about your work
-How to install
-... How to install dependencies
-Performance snapshot
-A snapshot of the leaderboard
-
 
 This repository contains a **PyTorch** training script (`calr_cutmix.py`) for a **100-class image classification** task. The model is based on **ResNeXt101-64×4d**, pretrained on ImageNet, and uses **CutMix** augmentation to improve generalization. The script trains for a specified number of epochs, validates on a held-out set, and finally produces predictions on a test set in `CSV` format (zipped for submission).
 
@@ -35,7 +30,10 @@ Key features include:
 Each subfolder should contain images or class-sorted directories (for `train` and `val`). The `test` directory contains unlabeled images.
 
 ## How to Use
-
+0. Install Requirements
+   ```bash
+   pip install torch torchvision numpy pillow
+   ```
 1. **Run the Script**  
    ```bash
    python calr_cutmix.py
